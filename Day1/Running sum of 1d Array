@@ -1,1 +1,4 @@
-hello
+Algorithm
+
+Increase nums[i] by the previous index's running sum. The previous index's running sum is stored at index i-1 in the input array.
+We repeat step 1 for all indices from 1 to n-1.
