@@ -1,3 +1,14 @@
 Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
 
 Return the running sum of nums.
+
+
+Using Input Array for Output
+Intuition
+
+In the previous approach we created an extra array to store our results. However, we do not actually need to do so. We can obtain the same result without using extra space by performing the same operations on the input array instead.
+
+Algorithm
+
+Increase nums[i] by the previous index's running sum. The previous index's running sum is stored at index i-1 in the input array.
+We repeat step 1 for all indices from 1 to n-1.
