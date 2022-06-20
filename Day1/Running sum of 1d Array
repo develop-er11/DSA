@@ -1,5 +1,4 @@
 Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
-
 Return the running sum of nums.
 
 
@@ -12,3 +11,10 @@ Algorithm
 
 Increase nums[i] by the previous index's running sum. The previous index's running sum is stored at index i-1 in the input array.
 We repeat step 1 for all indices from 1 to n-1.
+
+
+Complexity Analysis
+
+Time complexity: O(n)O(n) where nn is the length of input array.
+
+Space complexity: O(1)O(1) since we don't use any additional space to find the running sum. Note that we do not take into consideration the space occupied by the output array.
